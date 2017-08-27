@@ -17,13 +17,13 @@ export default {
       articles: [
         {
           id: 0,
-          title: '最新文章标题1',
-          description: '最新文章描述1'
+          title: '最热文章标题1',
+          description: '最热文章描述1'
         },
         {
           id: 1,
-          title: '最新文章标题2',
-          description: '最新文章描述2'
+          title: '最热文章标题2',
+          description: '最热文章描述2'
         }
       ]
     }

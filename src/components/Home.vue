@@ -7,18 +7,13 @@
       <mu-tab value="new" title="最新"></mu-tab>
       <mu-tab value="hot" title="最热"></mu-tab>
     </mu-tabs>
-    <new></new>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import New from '@/components/New'
-
 export default {
   name: 'home',
-  components: {
-    New
-  },
   data () {
     return {
       activeTab: 'new'
@@ -27,6 +22,7 @@ export default {
   methods: {
     handleTabChange (val) {
       this.activeTab = val
+      this.$router.push(val)
     }
   }
 }
