@@ -4,7 +4,8 @@
       v-for="article in articles"
       :title="article.title"
       :describe-text="article.description"
-      :key="article.id">
+      :key="article.id"
+      @click="$router.push({ name: 'Article', params: { id: article.id } })">
       <mu-avatar icon="assignment" slot="leftAvatar"></mu-avatar>
     </mu-list-item>
   </mu-list>
