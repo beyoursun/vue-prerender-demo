@@ -10,16 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'home',
       component: Home,
       children: [
         {
           path: 'new',
-          component: () => import('@/components/New'),
-          alias: '/'
+          name: 'new',
+          alias: '/',
+          component: () => import('@/components/New')
         },
         {
           path: 'hot',
+          name: 'hot',
           component: () => import('@/components/Hot')
         }
       ]

@@ -14,9 +14,9 @@
 <script>
 export default {
   name: 'home',
-  data () {
-    return {
-      activeTab: 'new'
+  computed: {
+    activeTab () {
+      return this.$route.name
     }
   },
   methods: {
